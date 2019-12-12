@@ -13,6 +13,11 @@ namespace Pamoka5_git_
             Console.WriteLine(Max(skaicius1, skaicius2, skaicius3));
             Console.WriteLine(InRange(skaicius1, skaicius2, skaicius3));
             Console.WriteLine(IsPrimal(skaicius1, skaicius2, skaicius3));
+            for (int i = 0; i < 50; i++)
+            {
+                Console.WriteLine(D20(skaicius1, skaicius2, skaicius3));
+            }
+
 
         }
         static int Max(int a, int b, int c)
@@ -40,14 +45,16 @@ namespace Pamoka5_git_
             {
                 if (a % i == 0)
                 {
-                    return false;
-                    
+                    return false; 
                 }
             }
-            return true;     
-                
-            
-            
+            return true;        
+        }
+
+        static int D20(int a, int b, int c)
+        {
+            int skaicius = new Random().Next(0, 100);
+            return skaicius;
         }
 
     }
