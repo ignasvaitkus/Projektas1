@@ -12,6 +12,7 @@ namespace Pamoka5_git_
             int skaicius3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Max(skaicius1, skaicius2, skaicius3));
             Console.WriteLine(InRange(skaicius1, skaicius2, skaicius3));
+            Console.WriteLine(IsPrimal(skaicius1, skaicius2, skaicius3));
 
         }
         static int Max(int a, int b, int c)
@@ -30,5 +31,24 @@ namespace Pamoka5_git_
             return test;
             
         }
+
+        static bool IsPrimal(int a,int b, int c)
+        {
+           
+
+            for (int i = 2; i < a; i++)
+            {
+                if (a % i == 0)
+                {
+                    return false;
+                    
+                }
+            }
+            return true;     
+                
+            
+            
+        }
+
     }
 }
