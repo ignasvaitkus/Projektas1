@@ -6,6 +6,7 @@ namespace Pamoka5_git_
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
             int skaicius1 = Convert.ToInt32(Console.ReadLine());
             int skaicius2 = Convert.ToInt32(Console.ReadLine());
             int skaicius3 = Convert.ToInt32(Console.ReadLine());
