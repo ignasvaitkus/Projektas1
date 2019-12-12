@@ -6,11 +6,12 @@ namespace Pamoka5_git_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
             int skaicius1 = Convert.ToInt32(Console.ReadLine());
             int skaicius2 = Convert.ToInt32(Console.ReadLine());
             int skaicius3 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Max(skaicius1, skaicius2, skaicius3));
+            Console.WriteLine(InRange(skaicius1, skaicius2, skaicius3));
 
         }
         static int Max(int a, int b, int c)
@@ -20,6 +21,14 @@ namespace Pamoka5_git_
             else if (b > c) max = b;
             else max = c;
             return max;
+        }
+
+        static bool InRange(int testNumber, int minValue, int maxValue)
+        {
+
+             bool test = testNumber >= minValue && testNumber <= maxValue;
+            return test;
+            
         }
     }
 }
